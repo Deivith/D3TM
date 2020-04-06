@@ -39,7 +39,7 @@ public class TestScript : MonoBehaviour
         while (projectBreaker < 100)
         {
             Debug.Log("HAHAHAHAHAHHA");
-            projectBreaker = 10;
+            projectBreaker = 15;
         }
     }
 
