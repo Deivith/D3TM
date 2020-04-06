@@ -7,7 +7,12 @@ public class TestScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        int i = 0;
+        while (i < 5)
+        {
+            Debug.Log("Jajajaja");
+        }
+        
         Debug.Log("Initializing");
 
     }
@@ -26,4 +31,6 @@ public class TestScript : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * Time.deltaTime);
     }
+
+
 }
