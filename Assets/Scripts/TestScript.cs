@@ -17,4 +17,9 @@ public class TestScript : MonoBehaviour
     {
         
     }
+
+    private void Mover()
+    {
+        transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * Time.deltaTime);
+    }
 }
