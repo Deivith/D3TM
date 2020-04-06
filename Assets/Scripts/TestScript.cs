@@ -17,4 +17,9 @@ public class TestScript : MonoBehaviour
     {
         
     }
+
+    private void AddContent() {
+        Debug.Log("Adding Content");
+    }
+
 }
