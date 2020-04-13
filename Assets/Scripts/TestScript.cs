@@ -8,15 +8,10 @@ public class TestScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int i = 0;
-        while (i < 5)
-        {
-            Debug.Log("Jajajaja");
-        }
-        
+        projectBreaker = 0;
+        Laugh();
         Debug.Log("Initializing");
-        projectBreaker = 10;
-        HateMe();
+
     }
 
     // Update is called once per frame
@@ -34,13 +29,14 @@ public class TestScript : MonoBehaviour
         transform.Translate(Vector3.forward * Input.GetAxis("Vertical") * Time.deltaTime);
         
     }
-    private void HateMe()
+    private void Laugh()
     {
-        while (projectBreaker < 100)
+        for (int i = 0; i < 5; i++)
         {
-            Debug.Log("HAHAHAHAHAHHA");
-            projectBreaker = 15;
+            Debug.Log("Jajajaja");
         }
+
+        
     }
 
 
