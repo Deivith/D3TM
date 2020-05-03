@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - FxTemporaire
+  - Obstacles
+  - Nest
   - Enemy
   layers:
   - Default
@@ -14,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - Enemy
+  - PostProcessing
+  - Fireball
   - Player
-  - 
-  - 
+  - Enemy
   - 
   - 
   - 
