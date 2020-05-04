@@ -67,10 +67,7 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButton(0) && canFire && mode.Equals(MODE.DRAGON))
         {
             canFire = false;
-            animator.SetTrigger("attack");
-            Vector3 pos = t.position;
-            pos.y += 1f;
-            Instantiate(Resources.Load("Fireball"),pos , t.rotation);
+            animator.SetTrigger("attack");            
             Invoke("AllowFiring", shootCadency);
         }
         
@@ -79,6 +76,11 @@ public class Player : MonoBehaviour {
 
     }
 
+    public void CreateProjectil() {
+        Vector3 pos = t.position;
+        pos.y += 1f;
+        Instantiate(Resources.Load("Fireball"), pos, t.rotation);
+    }
 
     private void AllowFiring()
     {
