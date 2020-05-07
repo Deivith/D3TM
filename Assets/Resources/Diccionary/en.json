@@ -1,0 +1,48 @@
+{
+  "dictionary":[
+    {
+      "key": "btn_play",
+      "value": "Play"
+    },
+    {
+      "key": "btn_options",
+      "value": "Options"
+    },
+    {
+       "key": "btn_Exit",
+      "value": "Exit"
+    },
+    {
+       "key": "btn_difficulty",
+      "value": "Difficulty"
+    },
+     {
+       "key": "btn_easy",
+      "value": "Easy"
+    },
+    {
+       "key": "btn_normal",
+      "value": "Normal"
+    },
+     {
+       "key": "btn_hard",
+      "value": "Hard"
+    },
+    {
+       "key": "label_sfx",
+      "value": "SFX"
+    },
+    {
+       "key": "label_music",
+      "value": "Music"
+    },
+    {
+       "key": "label_how_to_play",
+      "value": "How to Play"
+    },
+     {
+       "key": "label_htp_description",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+    ]
+}

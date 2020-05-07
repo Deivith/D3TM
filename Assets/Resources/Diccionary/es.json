@@ -1,0 +1,48 @@
+{
+  "dictionary":[
+    {
+      "key": "btn_play",
+      "value": "Jugar"
+    },
+    {
+      "key": "btn_options",
+      "value": "Opciones"
+    },
+    {
+       "key": "btn_Exit",
+      "value": "Salir"
+    },
+    {
+       "key": "btn_difficulty",
+      "value": "Dificultad"
+    },
+     {
+       "key": "btn_easy",
+      "value": "Facil"
+    },
+    {
+       "key": "btn_normal",
+      "value": "Normal"
+    },
+     {
+       "key": "btn_hard",
+      "value": "Dificil"
+    },
+    {
+       "key": "label_sfx",
+      "value": "SFX"
+    },
+    {
+       "key": "label_music",
+      "value": "Musica"
+    },
+    {
+       "key": "label_how_to_play",
+      "value": "Cómo jugar"
+    },
+     {
+       "key": "label_htp_description",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum pero en español."
+    }
+    ]
+}
