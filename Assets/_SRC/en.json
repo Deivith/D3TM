@@ -1,0 +1,48 @@
+{
+  "lang":[
+    {
+      "key":"btn_play",
+      "value":"Play"
+    },
+    {
+      "key":"btn_options",
+      "value":"Options"
+    },
+    {
+      "key":"btn_exit",
+      "value":"Exit"
+    },
+    {
+      "key":"label_difficulty",
+      "value":"Difficulty"
+    },
+    {
+      "key":"btn_normal",
+      "value":"Normal"
+    },
+    {
+      "key":"btn_hard",
+      "value":"Hard"
+    },
+    {
+     "key": "btn_esay",
+     "value": "Esay"
+	}
+    {
+      "key":"label_sfx",
+      "value":"SFX"
+    },
+    {
+      "key":"label_music",
+      "value":"Music"
+    },
+    {
+      "key":"label_how_to_play",
+      "value":"How to Play"
+    },
+    {
+      "key":"label_htp_description",
+      "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium at magna et tincidunt. Cras tristique lorem urna, id commodo risus laoreet eu. Pellentesque pulvinar et augue eu tincidunt. Sed egestas a massa vel auctor. Morbi fermentum commodo risus, ut rutrum ipsum aliquet at. Phasellus vulputate ullamcorper libero, in tempus erat dapibus ut. Ut sit amet velit scelerisque, feugiat neque quis, fermentum nisi."
+    }
+  ]
+}
