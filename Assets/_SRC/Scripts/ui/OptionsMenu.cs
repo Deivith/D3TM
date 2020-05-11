@@ -3,9 +3,13 @@ using com.odaclick.d3.storage;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
+    public Slider UISlider;
+
     // Start is called before the first frame update
     private void OnEnable() {
 

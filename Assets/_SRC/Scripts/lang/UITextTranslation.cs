@@ -12,11 +12,21 @@ public class UITextTranslation : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        UIText = GetComponent<Text>();        
+        GetUIText();
+    }
+
+    private void GetUIText() {
+        UIText = GetComponent<Text>();
     }
 
     public void SetText() {
-        UIText.text = Language.instance.GetString(key);
+
+        if (UIText == null) {
+            GetUIText();
+        }
+
+        UIText.text = Language.instance.GetString(key);        
+
     }
     
 }
