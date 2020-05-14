@@ -8,6 +8,7 @@ TagManager:
   - Obstacles
   - Nest
   - Enemy
+  - Main
   layers:
   - Default
   - TransparentFX
