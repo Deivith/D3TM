@@ -4,10 +4,13 @@ using com.odaclick.d3.storage;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
-    private AudioSource audioSource;
+    
+    public AudioMixerGroup music;
+    public AudioMixerGroup sfx;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +21,10 @@ public class MainMenu : MonoBehaviour
 
 
         Config.instance.Init();
-        Config.instance.AddMusic(gameObject);
+        Config.instance.AddMusic(gameObject, music);
 
     }
-    
+
 
 
 }

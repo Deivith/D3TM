@@ -8,13 +8,24 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public Slider UISlider;
+    public AudioMixer musicMixer;
+    public Slider UISliderMusicVolume;
 
+
+    private void Start() {
+
+        UISliderMusicVolume.onValueChanged.AddListener(
+            (float volume) => {
+                musicMixer.SetFloat("musicVolume", volume);
+            }
+        );
+
+    }
     // Start is called before the first frame update
     private void OnEnable() {
 
         Language.instance.OnChangeLanguage("es");
-
+        
     }
 
     public void OnChangeLanguage(string lang) {
@@ -24,6 +35,8 @@ public class OptionsMenu : MonoBehaviour
         Storage.SaveString(Storage.KEY_LANG,lang);
 
     }
+
+
 
 
 }

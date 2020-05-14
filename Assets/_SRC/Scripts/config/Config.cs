@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace com.odaclick.d3.config {
 
@@ -30,7 +31,7 @@ namespace com.odaclick.d3.config {
         }
 
 
-        public void AddMusic(GameObject gameObject) {
+        public void AddMusic(GameObject gameObject,AudioMixerGroup mixer) {
 
             if (music != null) {
 
@@ -41,7 +42,9 @@ namespace com.odaclick.d3.config {
                     if (audioSource == null) {
                         audioSource = gameObject.AddComponent<AudioSource>();
                     }
+                    audioSource.outputAudioMixerGroup = mixer;
                     audioSource.clip = audioClip;
+                    audioSource.loop = true;
                     audioSource.Play();
                 }
 
