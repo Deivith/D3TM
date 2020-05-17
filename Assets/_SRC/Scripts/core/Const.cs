@@ -6,9 +6,15 @@ namespace com.odaclick.d3.core {
 
     public class Const {
 
+        public static class SCENES{
+            public static string MAIN = "Menu";
+            public static string GAMEPLAY = "GamePlay";
+        }
+        
         public static class TAG {
             public static string MAIN = "Main";
         }
+
 
         public static class RESOURCES {
 

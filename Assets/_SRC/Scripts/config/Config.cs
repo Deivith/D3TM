@@ -24,7 +24,7 @@ namespace com.odaclick.d3.config {
         //
         private void Init() {
 
-            TextAsset ta = Resources.Load<TextAsset>(Const.RESOURCES.CONFIG_FILE);
+            TextAsset ta = AssetLoader.GetAsset<TextAsset>(Const.RESOURCES.CONFIG_FILE);
             variables = JsonUtility.FromJson<Variables>(ta.text);
 
         }

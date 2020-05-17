@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using com.odaclick.d3.core;
+using com.odaclick.d3.lang;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -21,22 +23,23 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
+        Language.instance.OnChangeLanguage();
         nest = 4;
         UpdateNestUI();
         OnGameStart();
+
     }
 
     public void OnGameStart()
     {
-        Time.timeScale = 0f;
-        optionText.text = "Debes destruir los 4 nidos de enemigos".ToUpper();
+        Time.timeScale = 0f;        
         optionsPanel.SetActive(true);
     }
 
-    public void OnContinueClicked()
+    public void OnQuitClicked()
     {
         Time.timeScale = 1f;
-        optionsPanel.SetActive(false);
+        SceneManager.LoadScene(Const.SCENES.MAIN);
     }
 
     public void OnRestartClicked()

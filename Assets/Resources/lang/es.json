@@ -37,12 +37,12 @@
       "value":"Musica"
     },
     {
-      "key":"label_how_to_play",
-      "value":"Como Jugar"
+      "key":"label_htp_options",
+      "value":"Debes destruir los 4 nidos de enemigos."
     },
     {
-      "key":"label_htp_description",
-      "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium at magna et tincidunt. Cras tristique lorem urna, id commodo risus laoreet eu. Pellentesque pulvinar et augue eu tincidunt. Sed egestas a massa vel auctor. Morbi fermentum commodo risus, ut rutrum ipsum aliquet at. Phasellus vulputate ullamcorper libero, in tempus erat dapibus ut. Ut sit amet velit scelerisque, feugiat neque quis, fermentum nisi."
+      "key":"label_continue",
+      "value":"Continuar."
     }
   ]
 }

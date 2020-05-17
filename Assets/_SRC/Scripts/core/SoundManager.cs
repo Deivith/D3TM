@@ -21,7 +21,7 @@ public class SoundManager
             go.name = music;                
         }
 
-        AudioClip audioClip = Resources.Load<AudioClip>(music);
+        AudioClip audioClip = AssetLoader.GetAsset<AudioClip>(music);
         if (audioClip != null) {
             AudioSource audioSource = go.GetComponent<AudioSource>();
             if (audioSource == null) {

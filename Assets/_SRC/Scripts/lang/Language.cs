@@ -55,6 +55,9 @@ namespace com.odaclick.d3.lang {
             return key;
         }
 
+        public void OnChangeLanguage() {
+            OnChangeLanguage(GetCurrentLanguage());
+        }
         public void OnChangeLanguage(string lang) {
 
             UITextTranslation[] tt = GameObject.FindObjectsOfType<UITextTranslation>();

@@ -95,10 +95,10 @@ namespace com.odaclick.d3.core {
 
         public void Init() {
 
-            _musicMixer = Resources.Load<AudioMixer>(Const.RESOURCES.MUSIC_AUDIO_MIXER);
+            _musicMixer = AssetLoader.GetAsset<AudioMixer>(Const.RESOURCES.MUSIC_AUDIO_MIXER);
             _musicMixer.SetFloat(Const.AUDIO_MIXER.MUSIC_VOLUME, musicVolume);
 
-            _fxMixer = Resources.Load<AudioMixer>(Const.RESOURCES.FX_AUDIO_MIXER);
+            _fxMixer = AssetLoader.GetAsset<AudioMixer>(Const.RESOURCES.FX_AUDIO_MIXER);
             _fxMixer.SetFloat(Const.AUDIO_MIXER.FX_VOLUME, fxVolume);
         }
 
