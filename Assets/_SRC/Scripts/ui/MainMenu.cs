@@ -1,4 +1,5 @@
 ﻿using com.odaclick.d3.config;
+using com.odaclick.d3.core;
 using com.odaclick.d3.lang;
 using com.odaclick.d3.storage;
 using System.Collections;
@@ -8,20 +9,19 @@ using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
-    
-    public AudioMixerGroup music;
-    public AudioMixerGroup sfx;
+
+    private void OnEnable() {
+        Language.instance.Init();        
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+        GameData.instance.Init();
 
-        Language.instance.Init(Storage.GetString(Storage.KEY_LANG,"en"));
-        Language.instance.OnChangeLanguage("es");
+        GameObject musicGO = SoundManager.AddMusic(Config.instance.sound.music, Const.RESOURCES.MUSIC_AUDIO_MIXER);
+        if(musicGO!=null) DontDestroyOnLoad(musicGO);
 
-
-        Config.instance.Init();
-        Config.instance.AddMusic(gameObject, music);
 
     }
 
