@@ -12,6 +12,9 @@ public class MainMenu : MonoBehaviour
 {
 
     private void OnEnable() {
+
+        //Storage.ClearStorage();
+
         Language.instance.Init();        
     }
 

@@ -7,6 +7,10 @@ namespace com.odaclick.d3.storage {
 
     public class Storage {
         
+        public static void ClearStorage() {
+            PlayerPrefs.DeleteAll();
+        }
+
         // Start is called before the first frame update
         public static void SaveString(string key, string value) {
             PlayerPrefs.SetString(key, value);

@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 9115794089276927416, guid: 6082a7b4d1317ec4ab4d3ac75b0f41f7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnContinueClicked
+      value: OnClickContinue
       objectReference: {fileID: 0}
     - target: {fileID: 9115794089276927416, guid: 6082a7b4d1317ec4ab4d3ac75b0f41f7,
         type: 3}

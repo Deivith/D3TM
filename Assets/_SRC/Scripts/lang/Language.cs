@@ -31,8 +31,8 @@ namespace com.odaclick.d3.lang {
         }
 
         public void Init(string lang) {
-
-            TextAsset ta = Resources.Load<TextAsset>(Const.RESOURCES.LANG_FOLDER + lang);
+            
+            TextAsset ta = AssetLoader.GetAsset<TextAsset>(Const.RESOURCES.LANG_FOLDER + lang);
             LanguageList langList = JsonUtility.FromJson<LanguageList>(ta.text);
 
             language = new Dictionary<string, string>();

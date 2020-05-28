@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(Const.SCENES.MAIN);
     }
 
+    public void OnClickContinue() {
+        Time.timeScale = 1f;
+        optionsPanel.SetActive(false);
+    }
+
     public void OnRestartClicked()
     {
         Time.timeScale = 1f;
